@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Order and Bill Generation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Product Order and Bill Generation</h1>
+
+        <div id="order-container">
+
+            <h2>Place Your Order</h2>
+
+            <label for="customer">Customer Name</label>
+
+            <input
+                type="text"
+                id="customer"
+                placeholder="Enter customer name"
+            >
+
+            <label for="product">Select Product</label>
+
+            <select id="product">
+
+                <option value="">-- Select Product --</option>
+
+                <option value="Laptop">Laptop - ₹50000</option>
+
+                <option value="Mobile">Mobile - ₹20000</option>
+
+                <option value="Headphones">Headphones - ₹2000</option>
+
+            </select>
+
+            <label for="quantity">Quantity</label>
+
+            <input
+                type="number"
+                id="quantity"
+                min="1"
+                step="1"
+                placeholder="Enter quantity"
+            >
+
+            <button onclick="generateBill()">
+                Generate Bill
+            </button>
+
+        </div>
+
+
+        <div id="bill" class="bill-box">
+
+            <h2>Order Bill</h2>
+
+            <p class="empty">
+                Bill will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
