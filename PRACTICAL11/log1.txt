@@ -1,0 +1,3 @@
+INFO: Started
+ERROR: Failed
+INFO: Running
