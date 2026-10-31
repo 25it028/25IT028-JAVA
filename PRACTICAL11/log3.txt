@@ -1,0 +1,2 @@
+INFO: Closed
+ERROR: Connection lost
